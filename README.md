@@ -5,7 +5,7 @@
  “MODiScope provides automated telemetry alerts, including period of performance countdowns, 75% funds‑usage warnings, burn‑rate trends, and invoice defect tracking, reducing the 45–60 minutes/day COs and CORs spend manually reconciling CLINs and invoices. The platform also offers simulation tools to assess the impact of funding changes, PoP extensions, or new CLINs, alleviating administrative burdens such as managing hundreds of modifications.”
 
 
-## Paint Points
+## Pain Points
 * Three separate versions of CLIN & invoice tracking​
 
 * Up to 1 hour/day spent manually reconciling invoices​
