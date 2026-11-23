@@ -2,7 +2,7 @@
 
 # Modsicope- CLIN Optics
 
- “MODiScope provides automated telemetry alerts, including period of performance countdowns, 75% funds‑usage warnings, burn‑rate trends, and invoice defect tracking, reducing the 45–60 minutes/day COs and CORs spend manually reconciling CLINs and invoices. The platform also offers simulation tools to assess the impact of funding changes, PoP extensions, or new CLINs, alleviating administrative burdens such as managing hundreds of modifications.”
+ “MODIScope provides automated telemetry alerts, including period of performance countdowns, 75% funds‑usage warnings, burn‑rate trends, and invoice defect tracking, reducing the 45–60 minutes/day COs and CORs spend manually reconciling CLINs and invoices. The platform also offers simulation tools to assess the impact of funding changes, PoP extensions, or new CLINs, alleviating administrative burdens such as managing hundreds of modifications.”
 
 
 ## Pain Points
@@ -42,19 +42,12 @@ Federal contract execution is complex, data is scattered, and decision-makers of
 - Telemetry insights across execution data.
 - An optional overlay of USAspending award context for situational awareness.
 
-## How is this a solution?
 
-##MCP Server: mcp-modiscope-server
-
-##Modiscope: APP/UI
-
-##What is a digital twin?
-### Path A
+### Path A -USAspending data
 
 
-### Path B
+### Path B - Internal CLIN data
 
-### Path C
 
 ### Tracks
 cumulative spend
@@ -91,4 +84,4 @@ could trigger alrts based on 75, 90 and overburn
 * 75% threshold warnings
 
 
-## Digital Twins
+
