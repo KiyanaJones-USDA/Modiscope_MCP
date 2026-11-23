@@ -205,3 +205,6 @@ mlflow.db
 
 # agent-integration-tests scratch logs/reports (generated)
 .scripts/agent-integration-tests/logs/
+
+# Streamlit local secrets (never commit to this public repo)
+.streamlit/secrets.toml
