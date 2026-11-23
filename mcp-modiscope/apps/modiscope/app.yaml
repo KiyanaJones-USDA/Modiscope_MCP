@@ -1,0 +1,13 @@
+# Modiscope Streamlit UI. Databricks Apps injects STREAMLIT_SERVER_PORT /
+# STREAMLIT_SERVER_ADDRESS (from DATABRICKS_APP_PORT), so no port flag is needed.
+command: ["streamlit", "run", "ui/streamlit_app.py"]
+
+env:
+  - name: PYTHONUNBUFFERED
+    value: "1"
+  # Base URL of the mcp-modiscope-server app (no trailing /mcp)
+  - name: MCP_APP_URL
+    value: "https://mcp-modiscope-server-7474654188777746.aws.databricksapps.com"
+  # Databricks-hosted model used by the chatbot page
+  - name: CHAT_MODEL_ENDPOINT
+    value: "databricks-claude-sonnet-4-6"

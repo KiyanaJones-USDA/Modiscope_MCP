@@ -1,0 +1,20 @@
+# Start the MCP server (uvicorn via server/main.py).
+# Run as a module so the app root is on sys.path and "server.app" resolves.
+# main.py binds to $DATABRICKS_APP_PORT (defaults to 8000).
+command: ["python", "-m", "server.main"]
+
+env:
+  - name: PYTHONUNBUFFERED
+    value: "1"
+  # USAspending award cache: one JSON file per PIID in a UC volume (no SQL warehouse needed).
+  # App service principal needs USE CATALOG/USE SCHEMA plus READ VOLUME + WRITE VOLUME on users.kiyana_jones.bronze.
+  - name: USASPENDING_CACHE_DIR
+    value: "/Volumes/users/kiyana_jones/bronze/usaspending_cache"
+  - name: USASPENDING_CACHE_TTL_DAYS
+    value: "5"
+  # Simulation scenarios (written only when fetch_usaspending_piid is called with create_simulation=true)
+  - name: SIMULATION_DIR
+    value: "/Volumes/users/kiyana_jones/bronze/simulations"
+  # Scenario runs (scenarios/ + clins/) are deleted after 7 days by the scheduled cleanup_simulation_runs notebook
+  - name: SIMULATION_TTL_DAYS
+    value: "7"
